@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <H1> Registrate </H1>
+    <button>
+      <a href="/users/login">¿Ya tienes cuenta? Iniciar Sesion</a>
+    </button>
+    <form action="/users/signup" method="post" id="formSignup">
+      <label for="first_name">Nombre:</label>
+      <input type="text" name="first_name" required><br><br>
+      
+      <label for="last_name">Apellido:</label>
+      <input type="text" name="last_name" required><br><br>
+      
+      <label for="age">Edad:</label>
+      <input type="number" name="age" required><br><br>
+      
+      <label for="email">Correo electrónico:</label>
+      <input type="email" name="email" required><br><br>
+      
+      <label for="password">Contraseña:</label>
+      <input type="password" name="password" required><br><br>
+      
+      <input type="hidden" name="role" value="user">
+      
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="/js/signup.js"></script>
+</html>
